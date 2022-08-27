@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<title>Cornelius Kibet</title>
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</head>
+<body>
+<h2 id="top" style="text-align: center;">DETECTION AND PREDICTION OF HUMAN ENCROACHMENT ON LAKE RIPARIAN LANDS.<br>Case Study: L. Naivasha</h2>
+<div class="floater">
+      <ul>
+        <li><a href="#top">0</a></li>
+        <li><a href="#introduction">1</a></li>
+        <li><a href="#problem">2</a></li>
+        <li><a href="#justification">3</a></li>
+        <li><a href="#objectives">4</a></li>
+        <li><a href="#studyarea">5</a></li>
+        <li><a href="#datasets">6</a></li>
+        <li><a href="#methodology">7</a></li>
+        <li><a href="#results">8</a></li>
+        <li><a href="#references">9</a></li>
+      </ul>
+</div>
+<div class="container">
+  <header class="page-header">
+    <nav>
+      <ul>
+        <li><a href="#introduction">1. Introduction</a></li>
+        <li><a href="#problem">2. Problem Statement</a></li>
+        <li><a href="#justification">3. Justification</a></li>
+        <li><a href="#objectives">4. Objectives</a></li>
+        <li><a href="#studyarea">5. Study Area</a></li>
+        <li><a href="#datasets">6. Datasets</a></li>
+        <li><a href="#methodology">7. Methodology</a></li>
+        <li><a href="#results">8. Expected Results</a></li>
+        <li><a href="#references">9. References</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<div class="section-text">
+  <h2 id="introduction">Introduction</h2>
+    Lake riparian land (sometimes called lake buffer riparian zone) is defined as a transition zone between terrestrial and aquatic ecosystems (Zaimes & Iakovoglou, 2021). Olokeogun et al. (2020) also describe lake riparian land as a zone of transition of energy and material between aquatic and terrestrial ecosystems. Lake riparian lands play an integral role in reducing sediment accumulation, protecting biodiversity (Lind et al., 2019), maintaining the sustainability of water quality (Wang et al., 2020), water purification (Liu et al., 2018),regulating surface runoff, enhancing infiltration and mitigating flood (Olokeogun et al., 2020). According to Kalota (2018), lake buffer riparian zones also form habitats for various species. Despite these critical roles played by lake riparian lands, they have been degraded in most lake basins around the globe as a consequence of human activities (Kumar et al., 2021) and (Otiang’a-Owiti & Oswe, 2007).<br>Several researchers, including Olokeogun et al. (2020), Zaimes and Iakovoglou (2021) and Wang et al. (2020), have noted that lake riparian lands are seen by the community as wasteland and hence are on the verge of being converted to other forms of land use, mainly,conversion into agricultural land. Most of the past research is centered on the lake-specific issues with a bit of mention of the revolutions that the respective riparian lands are subjected to, primarily due to human activities. For instance, Waithaka et al. (2018)immersed their studies in assessing the populations of macrophytes in Lake Naivasha, mainly focusing on the encroachment of the exotic aliens such as Salvinia molesta (floating water fern) and Eichhornia crassipes (water hyacinth) in the lake and flooding (Olokeogun et al., 2020).<br>In this regard, the current study seeks to utilize Remote Sensing (RS) and GIS techniques to gather and analyze spatial data to give an insight into how humans have encroached on lake riparian lands. Using Lake Naivasha as an example, the current study also aims to show how ncroachment on such riparian lands is projected to extend in future if the respective bodies initiate no specific actions.
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'read-more')" style="color:red"><b>Read more...</b></button>
+  </div>
+
+  <div id="read-more" class="tabcontent">
+  <h2 id="problem">Problem Statement</h2>
+    Most of the past research is centered on the lake-specific issues such as the encroachment of alien species into the lake ecosystem (Waithaka et al., 2018), floods (Olokeogun et al., 2020), and investigation of the effects of riparian land-use changes on soil aggregates, organic carbon (Liu et al., 2018), assessment of water quality (Mwongera et al., 2016) and 
+    sediment deposition rate (Walker et al., 2022) and water hyacinth (Odoyo Agutu et al., 2018).<br><br>Little attention has been allocated to the revolutions that the respective riparian lands are subjected to, mainly due to human activities.This study focuses on human encroachment on the lake riparian zone, particularly the conversion of the natural land into build-up and agricultural land.<br>
+
+  <h2 id="justification">Justification</h2>
+    - Conversion of natural land to other land uses such as agriculture and settlement 
+    hinders the functionality of the riparian land to the lake.<br><br>
+    - As people settle in the lake buffer riparian zone, their activities disturb the lake 
+    ecosystem (Otiang’a-Owiti & Oswe, 2007).<br><br>
+   - There is a danger to human life and health to people living deep inside the riparian 
+    land due to natural causes such as a flood. As an illustration (on account of eye 
+    witness), there are several buildings (including a private school) and public utilities 
+    (including electric poles) that were submerged during the 2019 heavy drops of rain
+    as the water level rose in the lake in an informal settlement called Kihoto.<br><br>
+    - It may be challenging to make riparian-related management decisions in the future 
+    if the population increases beyond manageable numbers. It is reasonable to think 
+    that the repercussion on the riparian land will be very significant at such times.<br><br>
+    Using RS and GIS to investigate human encroachment on the lake riparian land will bring 
+    into light the current and future situations and maybe a trigger to initiating related studies, 
+    and perhaps a wake-up call for the responsible bodies to take heed of the necessary actions.<br>
+
+  <h2 id="objectives">Objectives</h2>
+    <b>Genral Objective</b><br>
+    The main objective of this study is to use a land-use land-cover map to assess the current 
+    human encroachment on Lake Naivasha riparian land and couple it with other prediction 
+    variables to predict the future land-use land-cover changes on the riparian land.<br><br>
+    <b>Specific Objectives</b><br>
+    1. To assess human encroachment on the riparian land.<br>
+    2. To assess the spatial distribution of human encroachment on riparian land.<br>
+    3. To predict the future changes in LULC on the lake riparian land.<br>
+
+  <h2 id="studyarea">Study Area</h2>
+    The study area is the riparian land surrounding Lake Naivasha , the only freshwater lake in the Rift Valley of Kenya which lies at (0° 46’S, and 36° 20’E) at 1890 m above sea level, with a total water surface area of 150 Km2. The Lake is a wetland of international importance and an Important Bird Area (IBA) designated as a Ramsar site in 1995 (Kagundu & Creed, 2017).
+    <img style="width:100%;" src="assets/StudyArea.PNG">
+
+  <h2 id="datasets">Datasets</h2>
+    <img style="width:100%;" src="assets/datasets.PNG">
+
+  <h2 id="assets/methodology">Methodology</h2>
+    <img style="width:100%;" src="assets/methodology.PNG">
+
+  <h2 id="results">Expected Results</h2>
+      1. Map showing human encroachment on the lake riparian land.<br>
+    2. Description of spatial distribution and encroachment patterns.<br>
+    3. Map showing future changes in the LULC on the lake riparian land.<br>
+
+  <h2 id="references">References</h2>
+    Kagundu, N. M., & Creed, I. (2017). A LAKE ON THE EGDE DUE TO 
+    ENCROACHEMENT AND DEGRADATION OF.<br><br>Kalota, D. (2018). A temporal study of changing dynamics of Loktak Lake in Manipur 
+    using remote sensing and GIS techniques A temporal study of changing dynamics of 
+    Loktak Lake in Manipur using remote sensing and GIS. September, 1–6.<br><br>Kumar, M., Kalra, N., Singh, H., Sharma, S., Singh Rawat, P., Kumar Singh, R., Kumar 
+    Gupta, A., Kumar, P., & Ravindranath, N. H. (2021). Indicator-based vulnerability 
+    assessment of forest ecosystem in the Indian Western Himalayas: An analytical 
+    hierarchy process integrated approach. Ecological Indicators, 125. 
+    https://doi.org/10.1016/j.ecolind.2021.107568.<br><br>Lind, L., Hasselquist, E. M., & Laudon, H. (2019). Towards ecologically functional
+    riparian zones: A meta-analysis to develop guidelines for protecting ecosystem 
+    functions and biodiversity in agricultural landscapes. Journal of Environmental 
+    Management, 249(July), 109391. https://doi.org/10.1016/j.jenvman.2019.109391.<br><br>Liu, J., Wang, P., Wang, C., & Lu, B. (2018). E ff ects of riparian land use changes on 
+    soil aggregates and organic carbon. Ecological Engineering, 112(July 2017), 82–88. 
+    https://doi.org/10.1016/j.ecoleng.2017.12.015.<br><br>Odoyo Agutu, P., Karoki Gachari, M., & Ndegwa Mundia, C. (2018). An Assessment of 
+    the Role of Water Hyacinth in the Water Level Changes of Lake Naivasha Using 
+    GIS and Remote Sensing. American Journal of Remote Sensing, 6(2), 74. 
+    https://doi.org/10.11648/j.ajrs.20180602.13.<br><br>Of, U. S. E., Technology, G., Monitoring, I. N., & Water, O. F. (2016). USE OF 
+    GEOSPATIAL TECHNOLOGY IN MONITORING OF WATER.<br><br>Olokeogun, O. S., Ayanlade, A., & Popoola, O. O. (2020). Assessment of riparian zone 
+    dynamics and its flood ‑ related implications in Eleyele area of Ibadan , Nigeria. 
+    Environmental Systems Research. https://doi.org/10.1186/s40068-020-00167-4
+    Otiang’a-Owiti, G. E., & Oswe, I. A. (2007). Human impact on lake ecosystems: The 
+    case of Lake Naivasha, Kenya. African Journal of Aquatic Science, 32(1), 79–88. 
+    https://doi.org/10.2989/AJAS.2007.32.1.11.148.<br><br>Waithaka, E., Priscilla, B., Alice, M., Anthony, N., George, M., Beatrice, O., Patrick, L., 
+    & Erick, K. (2018). Assessment of Macrophyte Populations in Lake Naivasha , 
+    Kenya ; Using GIS Assessment of Macrophyte Populations in Lake Naivasha , 
+    Kenya ; Using GIS and Remote Sensing. January.<br><br>Walker, D., Shutler, J. D., Morrison, E. H. J., Harper, D. M., Hoedjes, J. C. B., & Laing, 
+    C. G. (2022). Quantifying water storage within the north of Lake Naivasha using 
+    sonar remote sensing and Landsat satellite data. Ecohydrology and Hydrobiology, 
+    22(1), 12–20. https://doi.org/10.1016/j.ecohyd.2021.07.011.<br><br>Wang, M., Duan, L., Wang, J., Peng, J., & Zheng, B. (2020). Determining the width of 
+    lake riparian buffer zones for improving water quality base on adjustment of land 
+    use structure. Ecological Engineering, 158(August), 106001. 
+    https://doi.org/10.1016/j.ecoleng.2020.106001.<br><br>Zaimes, G. N., & Iakovoglou, V. (2021). Assessing Riparian Areas of Greece — An Overview. 1–19.
+</div>
+
+
+
+<footer>
+<div class="footer-contents">
+    <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul> 
+    </div>  
+<div class="comments">
+  <form action="">
+    <textarea id="txt" placeholder="Please leave a comment"></textarea><br>
+    
+  </form>
+  <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+    <div class="popup" id="popup">
+      <img src="popupimg.png">
+      <h2>Thank You!</h2>
+      <p>Your comment has been sucessfully received</p>
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+</div>
+<p><small><i>This website is under construction</i></small></p>
+</footer>
+
+  <script>
+  let popup = document.getElementById("popup");
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+</script>
+
+</body>
+</html>
